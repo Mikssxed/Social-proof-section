@@ -11,11 +11,9 @@
 body {
     font-family: 'League Spartan', sans-serif;
     margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 100vh;
     background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
     background-position: left top, right bottom;
@@ -23,12 +21,12 @@ body {
     background-size: 45vw 45vh, 70vw 80vh;
     min-width: 1480px;
     min-height: 850px;
-    overflow-x: hidden;
 }
 main {
     width: 70%;
     height: 70%;
     position: relative;
+    margin: auto;
 }
 #welcome {
     width: 50%;
@@ -136,7 +134,6 @@ main {
 @media (max-width: 1000px) {
     body {
         display: grid;
-        width: 100vw;
         height: auto;
         min-width: 0;
         min-height: 0;
@@ -147,6 +144,7 @@ main {
         height: auto;
         min-width: 0;
         min-height: 0;
+        margin: auto;
     }
     #welcome {
         grid-area: 1 / 1 / 2 / 2;
